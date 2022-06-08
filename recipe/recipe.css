@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #777373;
+}
+
+.main-content {
+  padding: 2rem 0.5rem;
+  padding-bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-content .main-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.main-content .main-header a:hover {
+  color: #535151;
+}
+.main-content .description {
+  line-height: 1.6rem;
+  text-align: justify;
+  margin: 1.2rem 0;
+  width: 100%;
+}
+.main-content .description h3 {
+  display: none;
+}
+
+.main-content figure {
+  margin: 1rem auto;
+  text-align: center;
+}
+.main-content figcaption {
+  font-size: 0.8rem;
+  font-family: "Times New Roman", Times, serif;
+}
+figcaption a {
+  color: #6b97b4;
+}
+figcaption a:hover {
+  color: #365c75;
+}
+.main-content > figure > img {
+  width: 450px;
+}
+.main-content .recipe-box > h2 {
+  margin-bottom: 2rem;
+}
+.main-content .recipe-info {
+  border-radius: 5px;
+  border: 1px solid #d7cece;
+  margin: 1rem auto;
+  margin-bottom: 2rem;
+  padding: 2rem 1rem;
+  line-height: 1.5rem;
+}
+.main-content .recipe-info h3 {
+  display: none;
+}
+.main-content .recipe-info li {
+  margin: 1rem;
+  text-align: justify;
+}
+
+.recipe-box {
+  border-top: 2px solid #d7cece;
+  padding: 1rem;
+  padding-top: 2rem;
+  width: 100%;
+  line-height: 1.5rem;
+  text-align: justify;
+}
+.recipe-box > ul > li {
+  list-style: disc;
+  margin: 1rem;
+}
+.recipe-box > ol > li {
+  margin: 1rem 1.5rem;
+  list-style-type: upper-roman;
+  font-weight: bold;
+}
+.recipe-box > ol > li > p {
+  font-weight: 500;
+}
+
+@media (max-width: 480px) {
+  .main-content {
+    margin: 1rem 0.6rem;
+  }
+  .main-content > figure > img {
+    width: 300px;
+  }
+  .recipe-info {
+    width: 100%;
+  }
+}
+@media (min-width: 481px) and (max-width: 869px) {
+  .main-content {
+    margin: 1rem 2.5rem;
+  }
+}
+
+@media (min-width: 870px) and (max-width: 1023px) {
+  .main-content {
+    margin: 1rem 5rem;
+  }
+  .recipe-info {
+    width: 240px;
+  }
+}
+@media (min-width: 1024px) {
+  .main-content {
+    margin: 1rem 10rem;
+  }
+}
